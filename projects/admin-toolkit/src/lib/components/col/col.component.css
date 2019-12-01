@@ -1,0 +1,11 @@
+:host {
+    display: block;
+}
+
+:host(.md-6) {
+    width: 50%;
+}
+
+:host(.md-3) {
+    width: 25%;
+}

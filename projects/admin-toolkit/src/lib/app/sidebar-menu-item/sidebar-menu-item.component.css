@@ -1,0 +1,17 @@
+li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+}
+
+li a .icon-wrapper {
+    display: inline-block;
+    width: 31px;
+}
+
+li a .icon-wrapper svg {
+    width: 17px;
+    vertical-align: middle;
+}

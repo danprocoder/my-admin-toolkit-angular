@@ -1,0 +1,22 @@
+<span class="notification">
+  <a href="#" class="dropdown-trigger" #notificationDropdownTrigger>
+    <i data-feather="bell"></i>
+  </a>
+  <div class="notification-dropdown" libDropdown [trigger]="notificationDropdownTrigger">
+    <div class="header">Notifications</div>
+    <div class="body">
+      <a href="#" class="notification-item" *ngFor="let item of data">
+        <div class="icon">
+          <img [src]="item.image" *ngIf="item.image" />
+          <span *ngIf="item.icon" class="icon-wrapper">
+            <i [attr.data-feather]="item.icon"></i>
+          </span>
+        </div>
+        <div class="message">
+          <div>{{item.message}}</div>
+        </div>
+        <div class="time">{{item.time}}</div>
+      </a>
+    </div>
+  </div>
+</span>

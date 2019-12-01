@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.app-container {
+  font-family: 'Poppins';
+  font-size: 13px;
+  padding-left: 230px;
+}
+
+.app-container .app-sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  bottom: 0;
+  border-right: 1px solid #d9d9d9;
+}
+
+.app-container .app-topnav-wrapper {
+  height: 60px;
+  border-bottom: 1px solid #d9d9d9;
+  position: fixed;
+  top: 0;
+  left: 230px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-container .app-body-wrapper {
+  margin-top: 60px;
+}
+
+::ng-deep h1,
+::ng-deep h2,
+::ng-deep p,
+::ng-deep div,
+::ng-deep input,
+::ng-deep ul,
+::ng-deep li {
+  margin: 0;
+  padding: 0;
+}
+
+::ng-deep input,
+::ng-deep button {
+    font-family: inherit;
+}
+
+::ng-deep ul,
+::ng-deep li {
+    list-style: none;
+}
+
+::ng-deep a {
+    text-decoration: none;
+}

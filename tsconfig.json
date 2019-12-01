@@ -17,6 +17,17 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "admin-toolkit": [
+        "dist/admin-toolkit"
+      ],
+      "admin-toolkit/*": [
+        "dist/admin-toolkit/*"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ]
+    }
   }
 }

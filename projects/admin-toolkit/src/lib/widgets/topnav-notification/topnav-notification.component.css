@@ -1,0 +1,75 @@
+.notification {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+
+.notification .dropdown-trigger svg {
+  width: 22px;
+  height: 22px;
+}
+
+.notification > a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification .notification-dropdown {
+    width: 370px;
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+}
+
+.notification-dropdown .header {
+    padding: 10px;
+    font-weight: bold;
+}
+ 
+.notification-dropdown .notification-item {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.notification-dropdown .notification-item .icon {
+    width: 35px;
+    width: 35px;
+}
+
+.notification-dropdown .notification-item .icon img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+}
+
+.notification-dropdown .notification-item .icon .icon-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-dropdown .notification-item .icon .icon-wrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+.notification-dropdown .notification-item .message {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.notification-dropdown .notification-item .time {
+    color: #454545;
+    margin-left: 10px;
+}

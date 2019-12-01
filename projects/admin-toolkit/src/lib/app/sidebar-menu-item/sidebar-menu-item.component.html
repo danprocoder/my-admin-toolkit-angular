@@ -1,0 +1,22 @@
+<li *ngIf="children">
+  <a href="#">
+    <span class="icon-wrapper">
+      <i [attr.data-feather]="icon"></i>
+    </span>
+    <ng-content></ng-content>
+  </a>
+  <ul>
+    <li *ngFor="let child of children">
+      <a [href]="child.url">{{child.title}}</a>
+    </li>
+  </ul>
+</li>
+
+<li *ngIf="true">
+  <a [href]="url">
+    <span class="icon-wrapper">
+      <i [attr.data-feather]="icon"></i>
+    </span>
+    <ng-content></ng-content>
+  </a>
+</li>

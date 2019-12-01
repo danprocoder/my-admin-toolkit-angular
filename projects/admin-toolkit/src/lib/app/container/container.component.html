@@ -1,0 +1,14 @@
+<div class="app-container">
+  <div class="app-sidebar-wrapper">
+    <ng-content select="lib-brand"></ng-content>
+    <ng-content select="lib-sidebar"></ng-content>
+  </div>
+  <div class="app-body-wrapper">
+    <div class="app-topnav-wrapper">
+      <ng-content select="lib-topnav"></ng-content>
+    </div>
+    <div class="app-body-wrapper">
+      <ng-content select="lib-content"></ng-content>
+    </div>
+  </div>
+</div>

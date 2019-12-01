@@ -1,0 +1,21 @@
+<span class="user-dropdown-wrapper">
+  <a href="#" class="dropdown-trigger" #userDropdownTrigger>
+    <img [src]="imageUrl" />
+  </a>
+  <div class="user-dropdown" libDropdown [trigger]="userDropdownTrigger">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="icon-wrapper"><i data-feather="settings"></i></span>
+          Settings
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon-wrapper"><i data-feather="log-out"></i></span>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+</span>
