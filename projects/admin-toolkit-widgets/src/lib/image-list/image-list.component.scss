@@ -1,0 +1,27 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    height: 57px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.list-item-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.list-item-title-area {
+    margin-left: 15px;
+}
+
+.list-item-title-area .title {
+    font-weight: bold;
+
+}
+
+.list-item-title-area .description {
+    color: #787878;
+    font-size: 11px;
+}

@@ -27,6 +27,18 @@
       ],
       "@angular/*": [
         "./node_modules/@angular/*"
+      ],
+      "admin-toolkit-widgets": [
+        "dist/admin-toolkit-widgets"
+      ],
+      "admin-toolkit-widgets/*": [
+        "dist/admin-toolkit-widgets/*"
+      ],
+      "plugin-trello": [
+        "dist/plugin-trello"
+      ],
+      "plugin-trello/*": [
+        "dist/plugin-trello/*"
       ]
     }
   }

@@ -37,6 +37,76 @@
           }
         }
       }
+    },
+    "admin-toolkit-widgets": {
+      "root": "projects/admin-toolkit-widgets",
+      "sourceRoot": "projects/admin-toolkit-widgets/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/admin-toolkit-widgets/tsconfig.lib.json",
+            "project": "projects/admin-toolkit-widgets/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/admin-toolkit-widgets/src/test.ts",
+            "tsConfig": "projects/admin-toolkit-widgets/tsconfig.spec.json",
+            "karmaConfig": "projects/admin-toolkit-widgets/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/admin-toolkit-widgets/tsconfig.lib.json",
+              "projects/admin-toolkit-widgets/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "plugin-trello": {
+      "root": "projects/plugin-trello",
+      "sourceRoot": "projects/plugin-trello/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/plugin-trello/tsconfig.lib.json",
+            "project": "projects/plugin-trello/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/plugin-trello/src/test.ts",
+            "tsConfig": "projects/plugin-trello/tsconfig.spec.json",
+            "karmaConfig": "projects/plugin-trello/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/plugin-trello/tsconfig.lib.json",
+              "projects/plugin-trello/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "admin-toolkit"

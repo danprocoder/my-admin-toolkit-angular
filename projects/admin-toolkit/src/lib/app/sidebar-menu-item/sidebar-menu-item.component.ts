@@ -13,7 +13,6 @@ export class SidebarMenuItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

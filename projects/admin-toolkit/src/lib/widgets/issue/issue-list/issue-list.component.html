@@ -1,0 +1,20 @@
+<div class="issue-list"
+  (libOnDrop)="cardDropped.emit($event)"
+  libDropTarget
+  [libDropTargetSlot]="dropTargetSlot"
+  (libOnDragEnter)="onDragEnter()"
+  (libOnDragLeave)="onDragLeave()"
+>
+  <ng-content select="lib-issue-list-header"></ng-content>
+
+  <div
+    #dropTargetSlot
+    class="cards-container"
+  >
+    <ng-content select="lib-issue-list-card"></ng-content>
+
+    <div class="drop-slot" *ngIf="showBottomDropSlot" libScrollTo></div>
+  </div>
+  
+  <ng-content select="lib-issue-list-footer"></ng-content>
+</div>

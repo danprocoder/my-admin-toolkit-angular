@@ -1,0 +1,40 @@
+<lib-issue-list
+  (cardDropped)="onCardDropped($event)"
+>
+
+  <lib-issue-list-header>
+    <lib-issue-list-header-text>{{name}}</lib-issue-list-header-text>
+  </lib-issue-list-header>
+  
+  <lib-issue-list-card
+    *ngFor="let card of cards"
+    libDraggable
+    [libDragData]="card"
+  >
+    <lib-trello-card [card]="card"></lib-trello-card>
+  </lib-issue-list-card>
+
+  <lib-issue-list-card
+    *ngIf="newCardMode"
+    class="new-card"
+    style="padding:0;cursor:default;"
+  >
+    <lib-trello-new-card
+      (addCardClick)="saveNewCard($event)"
+      [saving]="newCardSaving"
+    ></lib-trello-new-card>
+  </lib-issue-list-card>
+
+  <lib-issue-list-footer>
+    <a
+      *ngIf="!newCardMode"
+      href="#"
+      (click)="newCardButtonListener($event)"
+      class="add-card-button"
+    >
+      <i-feather name="plus"></i-feather>
+      ADD A CARD
+    </a>
+  </lib-issue-list-footer>
+  
+</lib-issue-list>

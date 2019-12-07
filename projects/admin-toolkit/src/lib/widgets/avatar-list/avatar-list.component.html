@@ -1,0 +1,6 @@
+<ng-container *ngFor="let user of avatars">
+  <img *ngIf="user.imageUrl" [src]="user.imageUrl" />
+  <span class="member-initials" *ngIf="!user.imageUrl">
+    {{user.initials}}
+  </span>
+</ng-container>

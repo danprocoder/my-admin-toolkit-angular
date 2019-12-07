@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-.app-container {
+body {
   font-family: 'Poppins';
   font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background: #edf0f5;
+  color: #303948;
+}
+
+.app-container {
   padding-left: 230px;
 }
 
@@ -12,45 +19,57 @@
   left: 0;
   width: 230px;
   bottom: 0;
-  border-right: 1px solid #d9d9d9;
+  border-right: 1px solid #e4eaf3;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
 .app-container .app-topnav-wrapper {
   height: 60px;
-  border-bottom: 1px solid #d9d9d9;
   position: fixed;
   top: 0;
   left: 230px;
   right: 0;
   display: flex;
   flex-direction: row;
+  background: #ffffff;
+  z-index: 999999999999;
+  border-bottom: 1px solid #e4eaf3;
 }
 
 .app-container .app-body-wrapper {
   margin-top: 60px;
 }
 
-::ng-deep h1,
-::ng-deep h2,
-::ng-deep p,
-::ng-deep div,
-::ng-deep input,
-::ng-deep ul,
-::ng-deep li {
+h1,
+h2,
+p,
+div,
+input,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
-::ng-deep input,
-::ng-deep button {
+input,
+textarea,
+button {
     font-family: inherit;
 }
 
-::ng-deep ul,
-::ng-deep li {
+ul,
+li {
     list-style: none;
 }
 
-::ng-deep a {
+a {
     text-decoration: none;
+}
+
+textarea,
+div,
+input {
+  box-sizing: border-box;
+  outline: none;
 }

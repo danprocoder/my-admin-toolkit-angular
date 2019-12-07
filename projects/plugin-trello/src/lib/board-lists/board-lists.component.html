@@ -1,0 +1,30 @@
+<div class="header" *ngIf="board">
+  <div class="bread-crumb">
+    <a routerLink="/trello">Boards</a>
+    /
+    <span>{{board.name}}</span>
+  </div>
+</div>
+
+<div class="panel-wrapper">
+  <lib-card class="board-card">
+    <div class="board-info" *ngIf="board">
+      <div class="board-name">{{board.name}}</div>
+      <div class="right">
+        <span class="members-text">MEMBERS</span>
+        <lib-avatar-list [avatars]="getMembersAvatars(board.members)"></lib-avatar-list>
+      </div>
+    </div>
+    
+    <div class="lists-row">
+      <lib-row>
+        <lib-col md="3" *ngFor="let list of lists">
+          <trello-card
+            [listId]="list.id"
+            [name]="list.name"
+          ></trello-card>
+        </lib-col>
+      </lib-row>
+    </div>
+  </lib-card>
+</div>

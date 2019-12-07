@@ -1,0 +1,78 @@
+.card-labels {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.card-labels .label {
+    height: 3px;
+    width: 40px;
+    border-radius: 15px;
+    margin-right: 6px;
+}
+
+.card-labels .label.green {
+    background: green;
+}
+
+.card-labels .label.yellow {
+    background: #dbdb2f;
+}
+
+.card-labels .label.orange {
+    background: orange;
+}
+
+.card-name {
+    font-size: 14px;
+}
+
+.meta {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta .left .icon-wrapper {
+    margin-right: 8px;
+}
+
+.meta .left i-feather {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.meta .left a i-feather.bell-off {
+    color: #ddd;
+}
+
+.meta .left a i-feather.bell-on {
+    color: #c00;
+}
+
+.meta .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.meta .right .options {
+    margin-left: 8px;
+    position: relative;
+}
+
+.meta .right .options a i-feather {
+    width: 13px;
+    height: 13px;
+}
+
+.meta .right .options lib-dropdown {
+    width: 120px;
+}
+
+.meta .right .options lib-dropdown a {
+    display: block;
+    padding: 8px 13px;
+}

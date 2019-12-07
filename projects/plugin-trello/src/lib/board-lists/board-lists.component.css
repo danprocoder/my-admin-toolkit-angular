@@ -1,0 +1,43 @@
+.bread-crumb {
+    margin: 0 20px;
+}
+
+.panel-wrapper {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+lib-card .board-info {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e4eaf3;
+    padding: 20px;
+}
+
+lib-card .board-info .board-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+lib-card .board-info .right {
+    margin-left: auto;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+lib-card .board-info .right .members-text {
+    color: #575757;
+}
+
+lib-card .board-info .right lib-avatar-list {
+    margin-left: 10px;
+}
+
+.board-card lib-col {
+    max-height: 600px;
+}
+
+.lists-row {
+    padding: 20px;
+}

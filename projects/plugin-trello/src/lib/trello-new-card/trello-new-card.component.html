@@ -1,0 +1,9 @@
+<textarea #cardTextField (blur)="cardFieldBlur.emit(getCardEvent($event))"></textarea>
+
+<div class="options">
+  <a href="#"><i-feather name="user-plus"></i-feather></a>
+  <a href="#"><i-feather name="tag"></i-feather></a>
+  <a href="#" (click)="addCardClick.emit(getCardEvent($event));$event.preventDefault()" class="add-btn"><i-feather name="plus"></i-feather></a>
+</div>
+
+<div *ngIf="saving" class="saving-overlay"></div>

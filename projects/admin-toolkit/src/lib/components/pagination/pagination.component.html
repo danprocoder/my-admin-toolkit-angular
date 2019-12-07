@@ -1,0 +1,39 @@
+<ul>
+  <li>
+    <button
+      [disabled]="!canGoToPrev()"
+      (click)="goToFirstPage()"
+    >
+      <i-feather name="chevrons-left"></i-feather>
+    </button>
+  </li>
+  <li>
+    <button
+      [disabled]="!canGoToPrev()"
+      (click)="goToPrevPage()"
+    >
+      <i-feather name="chevron-left"></i-feather>
+    </button>
+  </li>
+  <li>
+    <select (change)="onPageSelect($event)">
+      <option *ngFor="let num of getPages();" [selected]="num === page">{{num}}</option>
+    </select>
+  </li>
+  <li>
+    <button
+      [disabled]="!canGoToNext()"
+      (click)="goToNextPage()"
+    >
+      <i-feather name="chevron-right"></i-feather>
+    </button>
+  </li>
+  <li>
+    <button 
+      [disabled]="!canGoToNext()"
+      (click)="goToLastPage()"
+    >
+      <i-feather name="chevrons-right"></i-feather>
+    </button>
+  </li>
+</ul>

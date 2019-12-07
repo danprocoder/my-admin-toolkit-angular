@@ -1,0 +1,11 @@
+lib-table {
+    margin-top: 20px;
+}
+
+.data-table-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <th *ngIf="addSerial">#</th>
+
+    <th *ngFor="let colName of columns;">{{colName.name}}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data;">
+      <td *ngIf="addSerial">{{data.indexOf(row) + 1}}</td>
+
+      <ng-container *ngFor="let colIndex of colIndices()">
+        <ng-container [ngSwitch]="getColumnType(colIndex)">
+
+          <!-- Text column type -->
+          <td *ngSwitchCase="'text'">
+            {{getColValue(row, colIndex)}}
+          </td>
+
+          <!-- Image column type -->
+          <td *ngSwitchCase="'profile-picture'" class="profile-picture">
+            <img [src]="getColValue(row, colIndex)" />
+          </td>
+
+        </ng-container>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>

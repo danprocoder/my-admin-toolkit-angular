@@ -1,0 +1,23 @@
+<div class="data-table-header">
+  <div>
+    Show
+    <select>
+      <option *ngFor="let size of pageSizes">{{size}}</option>
+    </select>
+    records
+  </div>
+</div>
+
+<lib-table
+  [columns]="columns"
+  [data]="data"
+></lib-table>
+
+<div class="data-table-footer">
+  <div>1 to 10 of 500</div>
+  <app-pagination
+    [total]="totalItems"
+    [pageSize]="pageSize"
+    (paginate)="paginationListener($event)"
+  ></app-pagination>
+</div>

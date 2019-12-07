@@ -1,0 +1,12 @@
+<lib-panel>
+  <lib-panel-header>New Users</lib-panel-header>
+  <lib-panel-body>
+    <div class="list-item" *ngFor="let item of data">
+      <img class="list-item-image" [src]="item.image" />
+      <div class="list-item-title-area">
+        <div class="title">{{item.title}}</div>
+        <div class="description">{{item.description}}</div>
+      </div>
+    </div>
+  </lib-panel-body>
+</lib-panel>

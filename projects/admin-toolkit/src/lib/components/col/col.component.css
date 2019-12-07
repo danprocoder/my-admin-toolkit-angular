@@ -1,5 +1,11 @@
 :host {
     display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+:host(.md-9) {
+    width: 75%;
 }
 
 :host(.md-6) {

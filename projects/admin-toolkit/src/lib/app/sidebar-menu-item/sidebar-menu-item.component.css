@@ -4,6 +4,7 @@ li a {
     align-items: center;
     padding: 0 20px;
     height: 40px;
+    color: #595959;
 }
 
 li a .icon-wrapper {
@@ -14,4 +15,11 @@ li a .icon-wrapper {
 li a .icon-wrapper svg {
     width: 17px;
     vertical-align: middle;
+    color: #97b2ca;
+}
+
+
+li a.active .icon-wrapper svg {
+    color: #14affb;
+    width: 20px;
 }

@@ -1,0 +1,32 @@
+:host {
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px #a9a9a96b;
+    border: 1px solid #dfdfdf;
+    z-index: 999999;
+}
+
+.dropdown .inner {
+    position: relative;
+}
+
+.dropdown .inner::before {
+    content: '';
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #dfdfdf;
+    top: -8px;
+    right: 8px;
+}
+
+.dropdown .inner::after {
+    content: '';
+    position: absolute;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ffffff;
+    top: -7px;
+    right: 9px;
+}

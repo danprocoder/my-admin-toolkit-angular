@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-all": "rm -rf dist && ng build && ng build admin-toolkit-widgets && ng build plugin-trello",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -20,9 +21,12 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "angular-feather": "^6.0.4",
+    "chart.js": "^2.9.3",
     "core-js": "^2.5.4",
     "feather-icons": "^4.24.1",
+    "node-trello": "^1.3.0",
     "rxjs": "~6.3.3",
+    "trello": "^0.9.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },

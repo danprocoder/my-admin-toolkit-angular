@@ -1,0 +1,36 @@
+<div class="card-labels" *ngIf="card.labels && card.labels.length > 0">
+  <ng-container *ngFor="let label of card.labels">
+    <span class="label" [ngClass]="label.color"></span>
+  </ng-container>
+</div>
+
+<div class="card-name">{{card.name}}</div>
+
+<div class="meta">
+  <div class="left">
+    <a href="#" *ngIf="card.subscribed" class="icon-wrapper">
+      <i-feather name="bell" class="bell-on"></i-feather>
+    </a>
+    <a href="#" *ngIf="!card.subscribed" class="icon-wrapper">
+      <i-feather name="bell-off" class="bell-off"></i-feather>
+    </a>
+    <span *ngIf="card.desc" class="icon-wrapper">
+      <i-feather name="align-left"></i-feather>
+    </span>
+  </div>
+  <div class="right">
+    <lib-avatar-list
+      *ngIf="card.members && card.members.length > 0"
+      [avatars]="getMembersAvatars(card.members)"
+    ></lib-avatar-list>
+    <div class="options">
+      <a href="#" #optionsDropdownTrigger>
+        <i-feather name="more-horizontal"></i-feather>
+      </a>
+      <lib-dropdown libDropdown [trigger]="optionsDropdownTrigger">
+        <a href="#">Open in Trello</a>
+        <a href="#" (click)="deleteCard($event, card)">Delete</a>
+      </lib-dropdown>
+    </div>
+  </div>
+</div>

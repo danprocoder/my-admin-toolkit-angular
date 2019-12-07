@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.board {
+    width: 250px;
+    height: 100px;
+    background: #f0f0f0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
